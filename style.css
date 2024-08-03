@@ -1,0 +1,855 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/* --------------------------------------- */
+
+/* 1- section one (the header) */
+
+/* a- navaigation bar */
+.nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50px;
+    top: 0;
+    background-color: #333333;
+    padding-left: 70px;
+    padding-right: 70px;
+    z-index: 9999;
+}
+
+.nav-menu {
+    float: right;
+    margin-top: 15px;
+}
+
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 300px;
+}
+
+#nav-fokir {
+    float: left;
+    color: rgb(255, 48, 91);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+/* B- home image */
+.one-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/Hero-img-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.home-content {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.home-content h1 {
+    color: rgb(255, 48, 91);
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.home-content h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.word-container {
+    font-weight: 300;
+    font-size: 26px;
+}
+
+/* word animation */
+.typed-cursor {
+    font-size: 1.2em;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+/* header-area end -------------------------- */
+
+/* 2- section two (about area) */
+
+.two-about {
+    background-color: white;
+    padding: 80px 60px;
+    position: relative;
+}
+
+.about-descr {
+    position: relative;
+}
+
+.about-tittle h2::before {
+    background: #ff305b none repeat scroll 0 0;
+    content: "";
+    height: 25px;
+    left: 8px;
+    position: absolute;
+    top: 29px;
+    width: 4px;
+}
+
+
+/* a- the box */
+.box-container {
+    width: 360px;
+    height: 440px;
+    position: absolute;
+}
+
+.border-box {
+    width: 360px;
+    height: 440px;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    border: #555555 solid 8px;
+    border-radius: 5px;
+}
+
+.image-box {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 3;
+    left: 30px;
+    top: 30px;
+}
+
+.image-box img {
+    background-color: blue;
+    width: 100%;
+    display: block;
+}
+
+/* ------n------------------- */
+/* box-icon */
+.parent-box {
+    width: 380px;
+    height: 460px;
+    position: relative;
+    margin-left: 80px;
+    float: left;
+    overflow: hidden;
+}
+
+.parent-box .box-icon {
+    width: 100%;
+    height: 440px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 180px 0;
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+    transform: translateY(100%);
+    transition: transform 1s;
+
+}
+
+.parent-box:hover .box-icon {
+    transform: translateY(0);
+}
+
+/* hover icon */
+.box-icon .fa-brands:hover {
+    color: #FF305B;
+}
+
+.box-icon .fa-brands {
+    color: white;
+    transition: color;
+}
+
+/* ------------------------------ */
+/* B- profile */
+.about-descr {
+    width: 50%;
+    float: right;
+    padding: 20px;
+    margin-right: 40px;
+    color: rgb(85, 85, 85);
+    text-align: left;
+
+}
+
+.about-profile {
+    margin-top: 20px;
+    position: relative;
+}
+
+.about-profile ul {
+    list-style: none;
+}
+
+.about-profile li {
+    padding: 10px;
+}
+
+.about-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 80px;
+}
+
+.about-descr h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about-descr p {
+    border-bottom: 1px dashed #999999;
+}
+.about-descr button
+{
+    cursor: pointer;
+}
+.about-descr button:hover
+{
+    background-color: #d1135c;
+}
+/* C- the button */
+.about-profile button {
+    padding: 13px 25px;
+    background-color: #FF305B;
+    color: white;
+    border: #FF305B solid 1px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.about-profile .fa-download {
+    color: white;
+    font-size: 16px;
+}
+
+/* about-area end---------------------------- */
+
+/* 3- section three */
+.three-service {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 100px 60px;
+}
+
+.Services-tittle {
+    margin-bottom: 70px;
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+    position: relative;
+}
+
+/* under-line */
+.Services-tittle h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.Services-tittle h2::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.under-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 160px;
+    left: 43%;
+    border-bottom: 1px solid red;
+}
+
+/* a- Service */
+.Services {
+    width: 80%;
+    margin: auto;
+}
+
+.Service-single {
+    padding: 40px 0;
+}
+
+.Service-single:hover {
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #888;
+}
+
+.Services-tittle h2 {
+    padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+}
+
+.Service-single h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.Service-single p {
+    color: rgb(85, 85, 85);
+}
+
+.three-service .Service-single {
+    width: 25%;
+    float: left;
+}
+
+.Service-single .fa-solid {
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Service-single:hover .fa-solid {
+    transform: scale(1.3);
+}
+
+/* service-area end-------------------------- */
+
+/* 4- section four (portfolio) */
+.four-portfolio {
+    background-color: white;
+    padding: 40px 60px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.portfolio-menu span {
+    padding-right: 20px;
+}
+
+.portfolio-tittle h2 {
+    padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* a- portfolio image  */
+.container-portfolio {
+    margin: 30px 0;
+}
+
+.portfolio-photo {
+    width: 30%;
+    float: left;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.portfolio-photo .inner-portofolio
+{
+    position: relative;
+}
+
+.portfolio-photo img {
+    width: 100%;
+}
+
+.layer-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio-photo:hover .layer-image {
+    opacity: 1;
+}
+
+/* .layer-image
+{
+    background-color: rgba(123, 121, 119, 0.5);
+    width: 26.7%;
+    height: 250px;
+    position: absolute;
+    top: 20px;
+} */
+
+/* a- portfolio content  */
+.portfolio-tittle {
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: rgb(51, 51, 51);
+    position: relative;
+}
+
+.portfolio-menu {
+    font-size: 17px;
+    margin-left: 20px;
+    color: rgb(51, 51, 51);
+}
+
+/* under-line */
+.portfolio-tittle h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.portfolio-tittle h2::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.under-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 160px;
+    left: 43%;
+    border-bottom: 1px solid red;
+}
+
+/* portfolio-area(section four) end
+------------------------------------- */
+
+/* 5- section five (Modal-area) */
+.five-Modal {
+    background-color: #f1f1f1;
+}
+
+.container-model {
+    width: 100%;
+    margin: auto;
+    padding: 80px;
+}
+
+.facts-icon {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin: 25px;
+}
+
+.facts-icon h3 {
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    padding: 20px 0;
+}
+
+.facts-icon h5 {
+    color: rgb(85, 85, 85);
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px 0;
+}
+
+.fa-solid,
+.fa-regular {
+    color: rgb(255, 48, 91);
+    font-size: 26px;
+}
+
+/* Modal-area (section five) end
+-------------------------------------- */
+
+/* 6- section six (client's-feedback area) */
+
+/* A- general */
+.six-feedback {
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* B- container & client */
+.container-feedback {
+    margin: 40px 0;
+}
+
+.feedback-tittle {
+    position: relative;
+}
+
+.Client-Feedback {
+    background-color: #f1f1f1;
+    width: 55%;
+    height: 40vh;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.container-feedback h2 {
+    color: rgb(51, 51, 51);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+}
+
+.content-feedback h3 {
+    font-size: 26px;
+}
+
+/* C- the image */
+.container-image {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid #FF305B;
+    border-right: 200px solid transparent;
+    position: absolute;
+}
+
+.image-feedback {
+    float: left;
+    position: absolute;
+    left: 40px;
+    width: 110px;
+    z-index: 3;
+}
+
+.image-feedback img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* D- the content */
+.content-feedback {
+    float: right;
+    position: absolute;
+    text-align: left;
+    left: 180px;
+}
+
+.content-feedback p {
+    vertical-align: baseline;
+    color: rgb(85, 85, 85);
+    margin: 12px 0;
+    font-weight: 400;
+}
+
+.fa-location-dot {
+    color: #F1CA9E;
+}
+
+.content-feedback span {
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.fa-star {
+    color: #F1C30D;
+    font-size: 16px;
+}
+
+/* under-line */
+.feedback-tittle h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.feedback-tittle h2::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.under-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 160px;
+    left: 43%;
+    border-bottom: 1px solid red;
+}
+
+/*client's-feedback area end
+-------------------------------------- */
+
+/* 7- section seven (Our-Blog area ) */
+
+/* A- general */
+.seven-blog {
+    background-color: #f1f1f1;
+}
+
+/* B- the container to image and content */
+.container-blog {
+    padding-bottom: 70px;
+}
+
+.single-blog {
+    width: 30%;
+    float: left;
+    margin: 20px;
+}
+
+/* C- content */
+.seven-blog h2 {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    color: rgb(85, 85, 85);
+}
+
+.blog-content h3 {
+    margin-bottom: 20px;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+}
+
+.single-blog .blog-content {
+    padding: 20px 20px;
+    background-color: white;
+}
+
+/* D- image and youtube */
+.single-blog img {
+    width: 100%;
+}
+
+.single-blog .blog-content a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+}
+
+.single-blog .blog-youtube {
+    width: 100%;
+    height: 50%;
+}
+
+/* under-line */
+.blog-tittle {
+    position: relative;
+}
+
+.blog-tittle h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.blog-tittle h2::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.under-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 160px;
+    left: 43%;
+    border-bottom: 1px solid red;
+}
+
+/*Our-Blog area end
+-------------------------------------- */
+
+/* 8- section eight (contacting area) */
+/* A- general */
+.eight-contacting {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.eight-contacting h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+}
+
+.contact-tittle h2 {
+    padding-bottom: 10px;
+}
+
+/* B- The Form */
+.eight-contacting form {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.form-control {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.name-mail1 {
+    width: 45%;
+}
+
+.name-mail2 {
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* C- the button */
+.submit-button {
+    background-color: #ff305b;
+    border-color: #ff305b;
+    color: #ffffff;
+    opacity: 1;
+    padding: 0 20px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 7px;
+}
+
+/* under-line */
+.contact-tittle {
+    position: relative;
+}
+
+.contact-tittle h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.contact-tittle h2::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 80px;
+    left: 46%;
+    border-bottom: 1px solid red;
+}
+
+.under-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 160px;
+    left: 43%;
+    border-bottom: 1px solid red;
+}
+
+/* contacting area end ----------------------- */
+
+/* 9- section nine (footer area) */
+
+/* A- general */
+.nine-footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* B- icone and the name */
+.nine-footer span {
+    color: #FF305B;
+}
+.nine-footer .fa-brands
+{
+    cursor: pointer;
+}
+.nine-footer .fa-brands:hover {
+    color: #FF305B;
+}
+.fa-brands {
+    margin: 20px 10px;
+}
+
+/* footer area end ----------------------- */
